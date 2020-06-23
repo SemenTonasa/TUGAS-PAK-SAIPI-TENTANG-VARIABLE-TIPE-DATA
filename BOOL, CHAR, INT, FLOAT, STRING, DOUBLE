@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int angka;
+bool hasil, hasil2;
+string nama = "Muhammad Yusfi Khatami", nim = "ETE10190110";
+char golonganDarah = 'B';
+float tinggiBadan, beratBadan = 65;
+
+double pengurangan (double tinggiBadan, double rumus)
+{
+	return tinggiBadan - rumus;
+}
+
+int main ()
+{
+	cout << "Nama\t\t\t\t\t: " << nama << endl;
+	cout << "\nNIM\t\t\t\t\t: " << nim << endl;
+	cout << "\nGolongan Darah\t\t\t\t: " << golonganDarah << endl;
+	cout << "\nTinggi Badan\t\t\t\t: "; cin >> tinggiBadan;
+	cout << "\nBerat Badan\t\t\t\t: " << beratBadan << endl;
+	cout << "\nIni adalah hasil berat badan ideal\t: " << pengurangan (tinggiBadan, 100) << endl << endl;
+
+	hasil  = tinggiBadan >= 150;
+	hasil2 = tinggiBadan <= 150;
+
+if (hasil)
+{
+	cout << "\n\t\t\t\tAnda Termasuk Tinggi\n";
+}	else if(hasil2)
+{
+	cout << "\n\t\t\t\tAnda Termasuk Pendek\n";
+}
+}
